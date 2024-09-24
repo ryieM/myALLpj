@@ -1,0 +1,172 @@
+
+header {
+    background: linear-gradient(to right, rgb(242, 223, 240), rgb(233, 121, 236), rgb(217, 73, 191));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid rgb(133, 74, 147);
+    height: 60px;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    position: relative;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "sriracha";
+    overflow-x: hidden;
+    
+    
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    gap: 10vh; 
+    width: 80vw;
+    height: auto; 
+    max-width: 100%;
+    margin-top: 10vh; 
+    margin-bottom: 60px; 
+    
+    
+}
+
+.image-container a {
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border: 3px solid #ff4a4a;
+    border-radius: 50px;
+}
+.image-caption {
+    margin-top: 8px; 
+    font-size: 20px; 
+    color: #333; 
+    
+}
+
+footer {
+    text-align: left; 
+    padding: 20px; 
+    background: linear-gradient(to right, rgb(242, 223, 240), rgb(233, 121, 236), rgb(217, 73, 191));
+    box-shadow: 0px -4px 8px rgba(253, 132, 218, 0.1); 
+    width: 100%; 
+    height: auto; 
+    position: static;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+}
+footer div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.h-btn{
+    position: static;
+    margin-top: 0px;
+    margin-left: -90%;
+    border: 3px solid #ff4a4a;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.h-btn a{
+    font-family: "sriracha";
+    text-decoration: none;
+    color: fuchsia;
+}
+.h-btn:hover {
+    transform:scale(1.25);
+    background-color: #f8307d;
+    
+}
+.h-btn a:hover{
+    color: white;
+}
+
+
+
+
+
+/*transition*/
+.image1 ,.image2 ,.image3,.image4,.image5,.image6,.image7,.image8,.image9{
+    transition: transform 0.3s, border-color 0.3s,color 0.3s ;
+}
+.image-caption:hover{
+    color: #ff4a4a;
+
+}
+.image1:hover{
+    transform: translateY(-10px);
+}
+.image2:hover{
+    transform: translateY(-10px);
+}
+.image3:hover{
+    transform: translateY(-10px);
+}
+.image4:hover{
+    transform: translateY(-10px);
+}
+.image5:hover{
+    transform: translateY(-10px);
+}
+.image6:hover{
+    transform: translateY(-10px);
+}
+.image7:hover{
+    transform: translateY(-10px);
+}
+.image8:hover{
+    transform: translateY(-10px);
+}
+.image9:hover{
+    transform: translateY(-10px);
+}
+
+
+.animated-background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #f4efbd, #d1eeed, #ead0e9, #717574);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease-in-out infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

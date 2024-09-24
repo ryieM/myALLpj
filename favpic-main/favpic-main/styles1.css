@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Sriracha", cursive;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgb(242, 223, 240), rgb(233, 121, 236), rgb(217, 73, 191));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid rgb(133, 74, 147);
+    position: relative;
+}
+
+.h-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 3px solid #ff4a4a;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.h-btn a {
+    font-family: "Sriracha";
+    text-decoration: none;
+    color: fuchsia;
+}
+
+.h-btn:hover {
+    transform: scale(1.25);
+    background-color: #f8307d;
+}
+
+.h-btn a:hover {
+    color: white;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 10vh auto 60px;
+    padding: 0 10px;
+}
+
+.text {
+    margin: 0 20px;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    flex: 1; 
+}
+
+.image-container img {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    object-fit: cover;
+    border: 3px solid #ff4a4a;
+    border-radius: 50px;
+
+    
+}
+
+footer {
+    text-align: left; 
+    padding: 20px; 
+    background: linear-gradient(to right, rgb(242, 223, 240), rgb(233, 121, 236), rgb(217, 73, 191));
+    box-shadow: 0px -4px 8px rgba(24, 251, 217, 0.1); 
+    width: 100%; 
+    height: auto; 
+    position: static;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+footer div {
+    display: inline-block;
+    margin-right: 10px;
+}
+.animated-background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #f4efbd, #d1eeed, #ead0e9, #717574);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease-in-out infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
